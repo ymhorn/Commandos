@@ -1,0 +1,22 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Commandos
+{
+    internal class AirCommando:Commando
+    {
+        public AirCommando(string name, string codeName, string status) : base(name, codeName, status)
+        {
+
+        }
+
+        public void Parachute()
+        {
+            Console.WriteLine("Commando is parachuting out of plane.");
+        }
+
+    }
+}

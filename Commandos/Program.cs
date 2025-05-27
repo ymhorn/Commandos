@@ -27,7 +27,10 @@ namespace Commandos
             Neriya.CodeName = "Z";
             Console.WriteLine(Neriya.CodeName);
             Neriya.SayName("Colonel");
-
+            AirCommando Shmuel = new AirCommando("Shmuel", "Y", "Standing");
+            SeaCommando Dovid = new SeaCommando("Dovid", "V", "Standing");
+            Shmuel.Parachute();
+            Dovid.Swim();
         }
     }
 }

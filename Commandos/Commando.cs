@@ -9,7 +9,7 @@ namespace Commandos
     internal class Commando
     {
         private string Name;
-        public string CodeName { get; set; }
+        public string CodeName { get ; set; }
         public string[] Utensils = new string[5] { "Hammer", "Axe", "Rope", "Duffel bag", "Water bottle",};
         public string Status;
 
