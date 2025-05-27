@@ -8,7 +8,7 @@ namespace Commandos
 {
     internal class Commando
     {
-        public string Name;
+        private string Name;
         public string CodeName;
         public string[] Utensils = new string[5] { "Hammer", "Axe", "Rope", "Duffel bag", "Water bottle",};
         public string Status;
@@ -37,6 +37,22 @@ namespace Commandos
             Console.WriteLine($"Commando {CodeName} is attacking.");
         }
 
+        public void SayName(string commaderRank)
+        {
+            if (commaderRank == "General")
+            {
+                Console.WriteLine(Name);
+            }
+            else if (commaderRank == "Colonel")
+            {
+                Console.WriteLine(CodeName);
+            }
+            else
+            {
+                Console.WriteLine("Sorry, this is clasified information.");
+            }
+ 
+        }
 
     }
 }
