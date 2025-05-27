@@ -32,7 +32,7 @@ namespace Commandos
             Status = "Hiding";
         }
 
-        public void Attack()
+        public virtual void Attack()
         {
             Console.WriteLine($"Commando {CodeName} is attacking.");
         }

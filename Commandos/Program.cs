@@ -18,8 +18,7 @@ namespace Commandos
             Neriya.Walk();
             Console.WriteLine(Neriya.Status);
             Neriya.Hide();
-            Console.WriteLine(Neriya.Status);
-            Neriya.Attack();
+            Console.WriteLine(Neriya.Status);           
             M16.Shoot();
             Console.WriteLine(M16.NumberOfBullets);
             Neriya.SayName("Colonel");
@@ -31,6 +30,9 @@ namespace Commandos
             SeaCommando Dovid = new SeaCommando("Dovid", "V", "Standing");
             Shmuel.Parachute();
             Dovid.Swim();
+            Neriya.Attack();
+            Shmuel.Attack();
+            Dovid.Attack();
         }
     }
 }
