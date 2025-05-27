@@ -33,6 +33,11 @@ namespace Commandos
             Neriya.Attack();
             Shmuel.Attack();
             Dovid.Attack();
+            Commando[] commandos = {Neriya, Shmuel, Dovid};
+            foreach (Commando commando in commandos)
+            {
+                commando.Attack();
+            }
         }
     }
 }
