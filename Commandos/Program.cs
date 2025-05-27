@@ -10,10 +10,10 @@ namespace Commandos
     {
         static void Main(string[] args)
         {
-            Commando Neriya = new Commando("Neriya", "X","Standing");
+            Commando Neriya = new Commando("Neriya", "X", "Standing");
             Weapon M16 = new Weapon("Heater", "Colt's Manufacturing Company", 30);
-            Console.WriteLine(Neriya.CodeName + " " +Neriya.Status);
-            Console.WriteLine(M16.Name + " " +M16.Manufacturer + " " +M16.NumberOfBullets);
+            Console.WriteLine(Neriya.Status);
+            Console.WriteLine(M16.Name + " " + M16.Manufacturer + " " + M16.NumberOfBullets);
             Console.WriteLine(Neriya.Utensils[3]);
             Neriya.Walk();
             Console.WriteLine(Neriya.Status);
@@ -22,7 +22,12 @@ namespace Commandos
             Neriya.Attack();
             M16.Shoot();
             Console.WriteLine(M16.NumberOfBullets);
-            Neriya.SayName("General");
+            Neriya.SayName("Colonel");
+            Console.WriteLine(Neriya.CodeName);
+            Neriya.CodeName = "Z";
+            Console.WriteLine(Neriya.CodeName);
+            Neriya.SayName("Colonel");
+
         }
     }
 }
