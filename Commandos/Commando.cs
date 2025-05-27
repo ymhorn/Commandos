@@ -10,14 +10,13 @@ namespace Commandos
     {
         public string Name;
         public string CodeName;
-        public string[] Utensils = new string[5];
+        public string[] Utensils = new string[5] { "Hammer", "Axe", "Rope", "Duffel bag", "Water bottle",};
         public string Status;
 
-        public Commando(string name, string codeName, string[] utensils, string status)
+        public Commando(string name, string codeName,string status)
         {
             this.Name = name;
             this.CodeName = codeName;
-            this.Utensils = utensils;
             this.Status = status;
         }
 
