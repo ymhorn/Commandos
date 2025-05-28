@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commandos
 {
-    internal class AirCommando:Commando
+    internal class AirCommando:Commando,IParachute
     {
         public AirCommando(string name, string codeName, string status) : base(name, codeName, status)
         {

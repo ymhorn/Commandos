@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Commandos
 {
-    internal class SeaCommando:Commando
+    internal class SeaCommando:Commando,ISwim
     {
         public SeaCommando(string name, string codeName, string status):base(name, codeName, status)
         {
