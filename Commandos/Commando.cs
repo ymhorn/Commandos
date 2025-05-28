@@ -37,21 +37,9 @@ namespace Commandos
             Console.WriteLine($"Commando {CodeName} is attacking.");
         }
 
-        public void SayName(string commaderRank)
+        public string SayName(string commaderRank)
         {
-            if (commaderRank == "General")
-            {
-                Console.WriteLine(Name);
-            }
-            else if (commaderRank == "Colonel")
-            {
-                Console.WriteLine(CodeName);
-            }
-            else
-            {
-                Console.WriteLine("Sorry, this is clasified information.");
-            }
- 
+            return ClearanceHandler.GetName(commaderRank, Name, CodeName);
         }
 
         

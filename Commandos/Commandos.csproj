@@ -44,7 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AirCommando.cs" />
+    <Compile Include="ClearanceHandler.cs" />
     <Compile Include="Commando.cs" />
+    <Compile Include="IParachute.cs" />
+    <Compile Include="ISwim.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeaCommando.cs" />
